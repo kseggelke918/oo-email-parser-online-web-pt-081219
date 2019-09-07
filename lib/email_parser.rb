@@ -21,7 +21,7 @@ end
 def parse 
   emails.split(/[\s,]/).each do |email|
     email.delete_if(" ") 
-    binding.pry 
+    #binding.pry 
    @@all << email  
   end
   @@all.uniq 
