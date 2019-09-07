@@ -5,27 +5,11 @@
 require "pry"
 class EmailAddressParser 
   attr_accessor :emails
-  @@all = []
 
 def initialize(emails)
   @emails = emails
 end 
   
-# def new(email_addresses)
-#   email_addresses.each do |email|
-#   binding.pry 
-#   end 
-#   #@@all << self  
-# end
-
-# def parse 
-#   emails.split(/[\s,]/).each do |email|
-#     email.delete_if(" ") 
-#     #binding.pry 
-#   @@all << email  
-#   end
-#   @@all.uniq 
-# end 
 
 def parse
   emails.split(/[\s,]/).reject(&:empty?).uniq 
