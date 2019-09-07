@@ -18,14 +18,14 @@ end
 #   #@@all << self  
 # end
 
-def parse 
-  emails.split(/[\s,]/).each do |email|
-    email.delete_if(" ") 
-    #binding.pry 
-   @@all << email  
-  end
-  @@all.uniq 
-end 
+# def parse 
+#   emails.split(/[\s,]/).each do |email|
+#     email.delete_if(" ") 
+#     #binding.pry 
+#   @@all << email  
+#   end
+#   @@all.uniq 
+# end 
 
 
 
