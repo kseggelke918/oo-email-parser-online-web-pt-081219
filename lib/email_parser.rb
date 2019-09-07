@@ -20,7 +20,7 @@ end
 
 def parse 
   emails.split(/[\s,]/).each do |email|
-    email 
+    email.delete_if(" ") 
     binding.pry 
    @@all << email  
   end
